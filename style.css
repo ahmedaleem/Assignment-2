@@ -1,0 +1,184 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar2 {
+    position: sticky;
+    box-shadow: 10px 10px 30px rgb(171, 170, 170);
+}
+
+.header {
+    background-color: black;
+}
+.hero-section {
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+.hero-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 13, 47, 0.5);
+    z-index: -1;
+}
+h1.dis {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bolder;
+}
+.services-section {
+    background: #ffffff;
+    padding: 40px 0;
+}
+
+.services-section h2, .services-section h3 {
+    color: black;
+}
+
+footer {
+    background-color: #222;
+}
+
+.font1{
+    color: black;
+}
+.font2{
+    color: red;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.service-box {
+    width: 30%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.service-box .icon {
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.transition-button {
+    background-color: white;   
+    border-radius: 10px;
+    padding: 10px 20px;       
+    border: none;             
+    cursor: pointer;          
+    transition: background-color 0.5s ease; 
+}
+
+.transition-button:hover {
+    background-color: #FB414E;   
+}
+
+.transition-button1 {
+    background-color: #444;   
+    padding: 10px 20px;       
+    border: none;             
+    cursor: pointer;          
+    transition: background-color 0.5s ease; 
+}
+
+.transition-button1:hover {
+    background-color: #FB414E;    
+}
+
+/Social Icons CSS/
+    .social-icons ul{
+        display: flex;
+        position: absolute
+    }
+    .social-icons ul li {
+        list-style: none;
+        margin: 0px 20px;
+        display: inline;
+        
+    }
+    .social-icons ul li .fab {
+        font-size: 25px;
+    }
+    /to add box around the icons/
+    .social-icons ul li a {
+        display: inline-block;
+        margin: 0px 5px;
+        border: 1px solid rgba(198, 198, 198, 0.634);
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 45px;
+        transition: all 0.3s ease;
+        color: #000000;
+        border-radius: 10%;
+    }
+    .social-icons ul li a:hover {
+        background-color: black;
+        color: white;
+    }
+
+/Search bar/
+    .search-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    form {
+        display: flex;
+        justify-content: flex-end;
+    }
+    input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #FB414E;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+    
+    button:hover {
+        background-color: black;
+    }
+
+/Form/
+    .form-container {
+        background: white;
+        padding: 20px;
+        width: 50%; 
+        max-width: 800px;
+    }
+    .description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 10px;
+        align-items: end;
+    }
